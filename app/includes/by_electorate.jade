@@ -1,0 +1,8 @@
+.span5
+  h3 By Division
+
+  form.form-inline
+    select.span2(ng-model="stateId", ng-options="id as s.abbreviation for (id, s) in states", ng-change="stateChanged()")
+      option(value="") State
+    select.span3(ng-model="divisionId", ng-options="id as d.name for (id, d) in divisionsForState", ng-change="divisionChanged()")
+      option(value="") Division

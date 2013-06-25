@@ -1,0 +1,14 @@
+section(ng-controller="ChooseElectorateController")
+  header
+    .page-header
+      h2 Electorate
+  .row
+    .span5
+      h3 By Address
+      form.form-inline
+        input.span5(type="text", placeholder="address")
+    .span2
+      h3 or
+    include by_electorate
+
+  include show_electorate

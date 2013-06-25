@@ -1,0 +1,11 @@
+div(ng-hide="!division")
+  h1 {{division.name}}
+  h2 {{state.name}}
+  p
+    | Your local member in the House of Representatives is {{representative.first_name}}
+    | {{representative.last_name}} ({{representative.party}}).
+  p
+    | Your Senators are:
+  ul
+    li(ng-repeat="senator in senators")
+      | {{senator.first_name}} {{senator.last_name}} ({{senator.party}}) {{senator.expires}}
